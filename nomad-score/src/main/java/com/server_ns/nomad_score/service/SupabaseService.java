@@ -11,10 +11,10 @@ import org.springframework.web.client.RestTemplate;
 @Service
 public class SupabaseService {
 
-    @Value("${supabase.url}")
+    @Value("${supabaseUrl}")
     private String supabaseUrl;
 
-    @Value("${supabase.key}")
+    @Value("${supabaseKey}")
     private String supabaseKey;
 
     private final RestTemplate restTemplate = new RestTemplate();
